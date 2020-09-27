@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>New Design</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<div class="container">
+
+		 <div class="header">
+				<div class="menu"><a href="#"><svg height="40px" width="40px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></a></div>
+				<div><img class="avatar" src="ava.jpg"></div>
+			</div>
+
+		 <div class="main">
+
+			 <a href="#" onclick="view('hidden1')">
+
+				 <div class="massage-box column">
+
+					 <div class="headline">
+					 	Изменение в рассчете зарплаты самозанятых курьеров на договоре ГПХ.
+					 </div>
+					 <div class="info">
+					 	<div class="date">#53 - 10.04.2020</div>
+					 	<div class="number">14/20</div>
+					 </div>
+
+					 <div class="basis" id="hidden1" style="display: none;">
+
+	 					<div class="text">
+	 						Коллеги, с 03.04.20 все курьеры рассчитываются по ставке 125 руб/час,
+	 						просьба оповестить всех сотрудников и переподписать договора,
+	 						которые вам вышлют в Пайрусе в ближайшие дни.
+	 					</div>
+	 					<div class="author">Автор: Петросян Арутюн</div>
+
+	 					<div class="buttonRead">
+	 						<form action="read.php" method="post" class="">
+	 							<input type="hidden" name="ad_id" value="<?php echo $ad['id']; ?>">
+	 							<input type="hidden" name="user_id" value="<?php echo $_SESSION['user']['id']; ?>">
+	 							<button type="submit" class="button" onclick="return confirm('Нажав на кнопку
+	 							ты подтверждаешь прочтение сообщения')">Принято</button>
+	 						</form>
+	 					</div>
+
+	 					<div class="links">
+	 						<div class="link"><button class="buttonLink">Список</button></div>
+	 						<div class="link"><button class="buttonLink">Изменить</button></div>
+	 						<div class="link"><button class="buttonLink">Удалить</button></div>
+	 					</div>
+
+	 				 </div>
+			 		</div>
+				</a>
+
+				<!-- Второе сообщение -->
+
+				<a href="#" onclick="view('hidden2')">
+
+ 				 <div class="massage-box column">
+
+ 					 <div class="headline">
+ 					 	С 1 июля 2020 года в меню появится новая пицца - Карбонара
+ 					 </div>
+ 					 <div class="info">
+ 					 	<div class="date">#54 - 20.06.2020</div>
+ 					 	<div class="number">9/20</div>
+ 					 </div>
+
+ 					 <div class="basis" id="hidden2" style="display: none;">
+
+ 	 					<div class="text">
+ 	 						Очень скоро в меню заведут новую пиццу Карбонара.
+							Очень важно закупить все необходимые ингредиенты для запуска нового продукта.
+							Маркетологи уже завели данную позицию в обеды персонала для дегустации перед продажами.
+							По всем вопросам обращайтесь в личку.
+ 	 					</div>
+ 	 					<div class="author">Автор: Сазонов Андрей</div>
+
+ 	 					<div class="buttonRead">
+ 	 						<form action="read.php" method="post" class="">
+ 	 							<input type="hidden" name="ad_id" value="<?php echo $ad['id']; ?>">
+ 	 							<input type="hidden" name="user_id" value="<?php echo $_SESSION['user']['id']; ?>">
+ 	 							<button type="submit" class="button" onclick="return confirm('Нажав на кнопку
+ 	 							ты подтверждаешь прочтение сообщения')">Принято</button>
+ 	 						</form>
+ 	 					</div>
+
+ 	 					<div class="links">
+ 	 						<div class="link"><button class="buttonLink">Список</button></div>
+ 	 						<div class="link"><button class="buttonLink">Изменить</button></div>
+ 	 						<div class="link"><button class="buttonLink">Удалить</button></div>
+ 	 					</div>
+
+ 	 				 </div>
+ 			 		</div>
+ 				</a>
+
+				<!-- Третье сообщение -->
+
+				<a href="#" onclick="view('hidden3')">
+
+ 				 <div class="massage-box column">
+
+ 					 <div class="headline">
+ 					 	Новая маркетинговая волна с 1 сентября 2020 года
+ 					 </div>
+ 					 <div class="info">
+ 					 	<div class="date">#54 - 15.08.2020</div>
+ 					 	<div class="number done">20/20</div>
+ 					 </div>
+
+ 					 <div class="basis" id="hidden3" style="display: none;">
+
+ 	 					<div class="text">
+ 	 						Ребята, каждой пиццерии необходимо забрать новые листовки из офиса.
+							В листовках присутствую рекламные материалы для кассы и доставку.
+							Просьба после получения оптисаться в чат территории.
+							Согласовать распростарнение в чате маркетинга.
+ 	 					</div>
+ 	 					<div class="author">Автор: Чувин Александр</div>
+
+ 	 					<div class="buttonRead">
+ 	 						<form action="read.php" method="post" class="">
+ 	 							<input type="hidden" name="ad_id" value="<?php echo $ad['id']; ?>">
+ 	 							<input type="hidden" name="user_id" value="<?php echo $_SESSION['user']['id']; ?>">
+ 	 							<button type="submit" class="button" onclick="return confirm('Нажав на кнопку
+ 	 							ты подтверждаешь прочтение сообщения')">Принято</button>
+ 	 						</form>
+ 	 					</div>
+
+ 	 					<div class="links">
+ 	 						<div class="link"><button class="buttonLink">Список</button></div>
+ 	 						<div class="link"><button class="buttonLink">Изменить</button></div>
+ 	 						<div class="link"><button class="buttonLink">Удалить</button></div>
+ 	 					</div>
+
+ 	 				 </div>
+ 			 		</div>
+ 				</a>
+
+		 </div>
+
+		</div>
+
+		<!-- <script src="JavaScript.js"></script> -->
+		<script>
+			function view(n) {
+					style = document.getElementById(n).style;
+					style.display = (style.display == 'block') ? 'none' : 'block';
+			}
+		</script>
+	</body>
+</html>

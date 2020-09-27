@@ -1,0 +1,213 @@
+html {
+	 box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	margin: 0px;
+	padding: 0px;
+	width: auto;
+	font-family: Roboto;
+	line-height: 24px;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+	color: #000;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.row {
+	display: flex;
+}
+
+.container {
+	max-width: 500px;
+	margin: 0 10px;
+	background-color: white;
+}
+.main {
+	display: flex;
+	flex-direction: column;
+}
+
+/* ----------------- Шапка --------------------- */
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+	width: auto;
+	padding: 0 10px;
+	margin-top: 10px;
+	background: white;
+}
+
+.menu a {
+	display: flex;
+	justify-content: center;
+	height: 40px;
+	width: 40px;
+	fill: #f26522;
+}
+
+.avatar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50px;
+	border-radius: 100px;
+	border: none;
+}
+
+/* ----------------- Сообщение --------------------- */
+
+.massage-box {
+	display: flex;
+	margin-top: 30px;
+	padding: 20px;
+	border: 1px solid #eaf1f2;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0px 8px 16px 0px rgba(92, 149, 161, 0.15);
+
+}
+
+.buttonAccordion {
+	padding: 0px;
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+	outline: none;
+}
+
+.massage {
+	display: flex;
+	margin-top: 30px;
+	padding: 20px;
+	border: 1px solid #eaf1f2;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0px 8px 16px 0px rgba(92, 149, 161, 0.15);
+}
+
+.headline {
+	width: 100%;
+	text-align: left;
+	margin-bottom: 10px;
+	font-size: 17px;
+	font-weight: 700px;
+	text-decoration: none;
+	outline: none;
+}
+
+.info {
+	display: flex;
+	justify-content: space-between;
+	font-size: 15px;
+	color: #bfbfbf;
+}
+
+.date {
+	font-size: 12px;
+}
+
+.number {
+	text-align: right;
+	font-size: 12px;
+}
+
+.done {
+	color: darkgreen;
+}
+
+.text {
+	margin-top: 20px;
+	font-size: 15px;
+}
+
+.author {
+	margin: 5px 0 20px 0;
+	font-size: 13px;
+	color: #bfbfbf;
+}
+
+.buttonRead {
+	display: flex;
+	justify-content: center;
+
+}
+
+.button {
+    height: 32px;
+		width: 120px;
+    font-size: 14px;
+    text-align: center;
+    color: #f26522;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #f26522;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover {
+    height: 32px;
+		width: 120px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    background-color: #f26522;
+    border: 1px solid #f26522;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.links {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.link a {
+	font-size: 14px;
+	color: #f26522;
+}
+
+.buttonLink {
+	height: 32px;
+	width: 120px;
+	font-size: 14px;
+	text-align: center;
+	color: #f26522;
+	border-radius: 5px;
+	background-color: white;
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+	outline: none;
+}
+
+.buttonLink:hover {
+	height: 32px;
+	width: 120px;
+	font-size: 14px;
+	text-align: center;
+	color: white;
+	border-radius: 5px;
+	background-color: #f26522;
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+	outline: none;
+}
